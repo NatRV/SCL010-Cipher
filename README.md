@@ -21,13 +21,10 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 
 La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
 
-Algunas ideas de ejemplo:
 
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
+Mensajería secreta para organización de ayuda situada en 2 zonas de conflicto
 
+La Organización secreta de aRXD (Ayuda Rápida por Drone, está situada en 2 zonas de conflicto, la cual utiliza drones que transportan insumos médicos y alimentos de sobrevivencia. El problema es que los drones no pueden ser detectados y el personal debe mantener en estricto rigor el secreto de la ubicación de los drones, por ende el personal de aRXD debe cifrar y descifrar mensajes en una app Web para obtener información de dichas ubicaciones y enviarlas a la zona de conflicto donde el dron partirá o descenderá con los insumos.
 
 ## Consideraciones generales
 
