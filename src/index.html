@@ -2,13 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--meta agregado-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--meta agregado-->
+    <title>aRXD</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+      <h1>Mensajería secreta</h1>
+    <h2>Elija la zona en conflicto</h2>
+    <!--Se dividen las secciones en DIV-->
+    <div id=scrnPrincipal>
+      <div>
+          <p> Mensaje:</p>
+          <textarea id="message_in" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+      </div>
+      <div>
+          <p>Selecciona el nivel de clave</p>
+          <!--se ocupará inputs para seleccionar nivel de clave y generar la lógica a través de los botones-->
+          <input type="number" name="levelKey" min="1" max="11" step="1" value="1"><br><br>
+          <button type="submit" onclick="encode()" value="encrypt">Encriptar</button>
+          <button type="submit" onclick="decode()" value="decrypt">Desencriptar</button>
+      </div>
+      <div>
+          <p> Resultado:</p>
+          <textarea id="message_out" cols="30" rows="10" placeholder="Resultado del mensaje"></textarea><br>
+          <button type="button" id="sendMessage">Enviar</button>
+      </div>
+  </div>
+  <div id="scrnNotice">
+    <p>Tu mensaje ha sido enviado con éxito, muchas gracias por ocupar Mensajería SOS</p>
+  </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
