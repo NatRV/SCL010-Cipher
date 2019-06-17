@@ -1,7 +1,46 @@
 /* Acá va tu código */
 body{
-text-align: center
+font-family: 'Quicksand', sans-serif;
+min-height: 100vh;
+color: white;
+margin: 0;
+text-align: center;
+background-image: url(https://www.spacex.com/sites/spacex/files/bfrlunar_v2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
+body:before{
+content: '';
+width: 100%;
+min-height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+
+background: linear-gradient(180deg, #52c4df, #ad55c1);
+opacity: 0.5;
+z-index: -1;
+}
+.btnED{
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+    padding: 10px;
+    margin: 0;
+    background: #232324;
+    color:white;
+    font-size: 60%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+.btnED:hover{
+transform: translateY(3px);
+box-shadow: 0px 30px 5px -15px rgba(0, 0, 0, 0.3);
+}
+
 /*Ocultando contenedores div*/
 #scrnNotice{
     display: none;
