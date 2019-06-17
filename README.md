@@ -21,10 +21,12 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 
 La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
 
+mTS (messageToSpace) = Mensaje al espacio
+El contexto de la tématicase basa en ofrecer un servicio de mensajería para las personas (familiares, amigos o público en general), para enviar mensajes encriptados a la nave que llevará a los tripulantes a un viaje espacial. 
+¿Por qué encriptados? Porque la nave sólo recibe mensajes encriptados con cierto rango de clave (desplazamiento).
 
-Mensajería secreta para organización de ayuda situada en 2 zonas de conflicto
-
-La Organización secreta de aRXD (Ayuda Rápida por Drone, está situada en 2 zonas de conflicto, la cual utiliza drones que transportan insumos médicos y alimentos de sobrevivencia. El problema es que los drones no pueden ser detectados y el personal debe mantener en estricto rigor el secreto de la ubicación de los drones, por ende el personal de aRXD debe cifrar y descifrar mensajes en una app Web para obtener información de dichas ubicaciones y enviarlas a la zona de conflicto donde el dron partirá o descenderá con los insumos.
+Percepción del usuario al usar mTS:
+La idea del servicio mTS es que al encriptar o desencriptar el mensaje, pueda enviarlo a la nave, y a su vez la nave pueda devolver un mensaje encriptado con cierto rango de clave (desplazamiento) para que el usuario pueda descifrar esa clave.
 
 ## Consideraciones generales
 
