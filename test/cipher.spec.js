@@ -1,13 +1,13 @@
-describe('cipher', () => {
+describe('cipher', () => { //describe a quién voy a testear, describe('operations')
 
-  it('debería ser un objeto', () => {
-    assert.equal(typeof cipher, 'object');
+  it('debería ser un objeto', () => { // qué voy a testear
+    assert.equal(typeof cipher, 'object'); //es mi compararación
   });
 
   describe('cipher.encode', () => {
 
     it('debería ser una función', () => {
-      assert.equal(typeof cipher.encode, 'function');
+      assert.equal(typeof cipher.encode, 'function'); 
     });
 
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33');
