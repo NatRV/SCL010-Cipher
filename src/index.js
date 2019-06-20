@@ -1,18 +1,25 @@
-function showResultText() { // función para mostrar el resultado
-  let messageIn = document.getElementById('message_in').value; // declarar variable de entrada de texto
+let messageIn;
+
+function showResultTextEncrypt() { // función para mostrar el resultado del encriptado
+  messageIn = document.getElementById('message_in').value; // declarar variable de entrada de texto
   //console.log(messageIn);
   let offSet = document.getElementById('offSetLevel').value; // declarar variable de desplazamiento
   let showResult = cipher.encode(messageIn, parseInt(offSet)); // declarar variable donde llama a la función y sus parámetros
   document.getElementById('message_out').value = showResult; // realizar llamado para mostrar la función en textarea
 }
+function showResultTextDecrypt(){
+messageIn= document.getElementById('message_in').value;
+let offSet = document.getElementById('offSetLevel').value;
+let showResult = cipher.decode(messageIn, parseInt(offSet));
+document.getElementById('message_out').value = showResult;
+}
+//btn encriptar
 const btnEncrypt= document.getElementById('encodeM'); // declarar const para llamar al boton encriptar
-btnEncrypt.addEventListener('click', showResultText); // función click para mostrar resultado con el btn encriptar
+btnEncrypt.addEventListener('click', showResultTextEncrypt); // función click para mostrar resultado con el btn encriptar
 
 //btn desencriptar
-let btnDecode = document.getElementById('decodeM');
-btnDecode.addEventListener('click', () => {
-  document.getElementById('message_out').innerHTML = `El resultado es: ${"message_in"}`; // colocar variable *textodescifrado*
-})
+const btnDecrypt = document.getElementById('decodeM');
+btnDecrypt.addEventListener('click', showResultTextDecrypt);
 
 //función botón "enviar" mensaje, es un boton falso que mostrará otra pantalla
 let btnSend = document.getElementById('sendMessage'); //declarar variable boton enviar

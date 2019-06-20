@@ -19,7 +19,7 @@ position: absolute;
 top: 0;
 left: 0;
 background: linear-gradient(180deg, #52c4df, #ad55c1);
-/*background-size: 100% 100%;*/
+background-size: cover;
 opacity: 0.5;
 z-index: -1;
 }
