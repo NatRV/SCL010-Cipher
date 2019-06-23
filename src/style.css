@@ -1,47 +1,70 @@
 /* Acá va tu código */
-body{
-font-family: 'Quicksand', sans-serif;
-min-height: 100vh;
-color: white;
-margin: 0;
-text-align: center;
-background-image: url(https://www.spacex.com/sites/spacex/files/bfrlunar_v2.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 120%;
+  text-shadow: 0.5px 0.5px 1px#252525;
+  text-align: center;
+  color: white;
+
+  margin: 5%;
+  min-height: 100vh;
+  background-image: url(../images/spacex2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-body:before{
-content: '';
-width: 100%;
-min-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-background: linear-gradient(180deg, #52c4df, #ad55c1);
-background-size: cover;
-opacity: 0.5;
-z-index: -1;
+.screenBack {
+  font-size:150%;
+  max-width: 100%;
+  margin-top: 10%;
+  padding: 10%;
+  padding-top: 10%;
+  text-align: center;
 }
-.btnED{
+.boxOffSet{
+    background: #525050;
+    border: 0;
+    color:#ffffff;
     font-family: 'Quicksand', sans-serif;
-    display: inline;
-    padding: 10px;
-    margin: 0;
-    background: #232324;
-    color:white;
-    font-size: 60%;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    border-radius: 8px;
-    transition: all 300ms;
+    padding: 0.7%;
+    opacity: 0.7;
+    
 }
-.btnED:hover{
-transform: translateY(3px);
-box-shadow: 0px 30px 5px -15px rgba(0, 0, 0, 0.3);
+.btnED {
+  font-family: 'Quicksand', sans-serif;
+  display: inline;
+  padding: 10px;
+  margin: 1%;
+  background: #232324;
+  color: white;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border-radius: 8px;
+  transition: all 300ms;
+}
+
+.btnED:hover {
+  transform: translateY(3px);
+  box-shadow: 0px 30px 5px -15px rgba(0, 0, 0, 0.3);
+}
+
+.textarea {
+  margin: 0;
+  color: #ffffff;
+  font-size: 100%;
+  border-radius: 1%;
+  font-family: 'Quicksand', sans-serif;
+  min-width: 70%;
+  max-width: 20%;
+  min-height: 20%;
+  max-height: 20%;
+  border: 0px;
+  background-color: rgba(49, 48, 48, 0.3)
 }
 
 /*Ocultando contenedores div*/
-#scrnNotice{
-    display: none;
+#scrnNotice {
+  display: none;
 }

@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--meta agregado-->
   <title>messageToSpace</title>
+  <link rel="shortcut icon" href="../images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,18 +16,20 @@
 <body>
   <!--Se dividen las secciones en DIV-->
   <div id="scrnPrincipal">
-    <h1>mTS</h1>
-    <h2>Mensajes al espacio</h2>
-    <p>Con mTS puedes enviar mensajes a los tripulantes de la nave que están pronto a despegar hacia un viaje espacial
+    <div class="h1"><h1><strong></strong>mTS</strong></h1></div>
+    <div class="introMts">
+    <h2 id="h2subtitle">Mensajes al espacio</h2>
+    <p id="textMts">Con mTS puedes enviar mensajes a los tripulantes de la nave que están pronto a despegar hacia un viaje espacial.
       <br>
       La nave sólo puede recibir mensajes encriptados.</p>
-    <p>Los tripulantes podrán leer todos los mensajes una vez ya hayan partido al espacio exterior</p>
+    <p id="pdText">Los tripulantes podrán leer todos los mensajes una vez ya hayan partido al espacio exterior</p>
+  </div>
     <div>
       <p> Mensaje:</p>
-      <textarea id="message_in" class="textareaIn" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+      <textarea id="message_in" class="textarea" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
     </div>
     <div>
-      <p>Selecciona el nivel de clave</p>
+      <p>Selecciona el nivel de encriptado/desencriptado:</p>
       <!--se ocupará inputs y btnes para seleccionar nivel de clave y generar la lógica a través de los botones-->
       <input type="number" class="boxOffSet" id="offSetLevel" min="1" max="11" step="1" value="1"><br><br>
       <input type="button" value="Encriptar" id="encodeM" class="btnED">
@@ -34,13 +37,14 @@
     </div>
     <div>
       <p> Resultado:</p>
-      <textarea id="message_out" class="textareaOut" cols="30" rows="10"
+      <textarea id="message_out" class="textarea" cols="30" rows="10"
         placeholder="Resultado del mensaje"></textarea><br>
-      <button type="button" id="sendMessage" class="btnED">Enviar</button>
+      <button type="button" id="sendMessage" class="btnED">Enviar a la nave</button>
     </div>
   </div>
-  <div id="scrnNotice">
-    <p>AJSOKJJRNDNJSI</p>
+  <div class="screenBack" id="scrnNotice">
+    <p>Lwfhnfx%utw%jsanfw%yz%rjsxfoj<br>%f%qtx%ywnuzqfsyjx&%Xfqzitx.<br><br>
+      Desencripta este mensaje que la nave te dejó<br>(ocupa el nivel de desencriptado Nº 5)</Desencripta></p>
     <button type="button" id="toBack" class="btnED">Volver</button>
   </div>
   <script src="cipher.js"></script>

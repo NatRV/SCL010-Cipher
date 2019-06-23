@@ -7,8 +7,8 @@ function showResultTextEncrypt() { // función para mostrar el resultado del enc
   let showResult = cipher.encode(messageIn, parseInt(offSet)); // declarar variable donde llama a la función y sus parámetros
   document.getElementById('message_out').value = showResult; // realizar llamado para mostrar la función en textarea
 }
-function showResultTextDecrypt(){
-messageIn= document.getElementById('message_in').value;
+function showResultTextDecrypt(){ // función para mostrar el resultado del desencriptado
+messageIn= document.getElementById('message_in').value; // 
 let offSet = document.getElementById('offSetLevel').value;
 let showResult = cipher.decode(messageIn, parseInt(offSet));
 document.getElementById('message_out').value = showResult;
@@ -46,6 +46,3 @@ btnBack.addEventListener('click', () => {
 //     palabraCifrada = palabraCifrada + letraCifrada;
 // }
 // console.log(palabraCifrada); //imprimir si funciona
-
-
-// let palabra cifrada
