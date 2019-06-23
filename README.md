@@ -15,14 +15,9 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
-## Resumen del proyecto
-
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
-
-mTS (messageToSpace) = Mensaje al espacio
-El contexto de la tématicase basa en ofrecer un servicio de mensajería para las personas (familiares, amigos o público en general), para enviar mensajes encriptados a la nave que llevará a los tripulantes a un viaje espacial. 
+## Resumen del proyecto:
+mTS (messageToSpace) = Mensajes al espacio
+El contexto de la tématica se basa en ofrecer un servicio de mensajería para las personas (familiares, amigos o público en general), para enviar mensajes encriptados a la nave que llevará a los tripulantes a un viaje espacial. 
 ¿Por qué encriptados? Porque la nave sólo recibe mensajes encriptados con cierto rango de clave (desplazamiento).
 
 Percepción del usuario al usar mTS:
@@ -242,7 +237,11 @@ resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
 Diseño de experiencia de usuario (User Experience Design):
 
 - Ideación
+La idea de esta App Web, fue tratar de generar un modo de participación en la idea de enviar mensajes a tripulantes que puedan viajar al espacio exterior.
+
 - Prototipado (sketching)
+Para empezar, se trató de idear el flujo de interacción, tratando de identificar botones y tratar de simplificar las acciones
+
 - Testeo e Iteración
 
 Desarrollo Front-end:
