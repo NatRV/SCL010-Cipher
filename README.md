@@ -22,6 +22,7 @@ El contexto de la tématica se basa en ofrecer un servicio de mensajería para l
 
 Percepción del usuario al usar mTS:
 La idea del servicio mTS es que al encriptar o desencriptar el mensaje, pueda enviarlo a la nave, y a su vez la nave pueda devolver un mensaje encriptado con cierto rango de clave (desplazamiento) para que el usuario pueda descifrar esa clave.
+[![pantalla de inicio]](https://github.com/NatRV/SCL010-Cipher/blob/master/images/captura%20pantalla1.PNG)
 
 ## Consideraciones generales
 
@@ -241,8 +242,46 @@ La idea de esta App Web, fue tratar de generar un modo de participación en la i
 
 - Prototipado (sketching)
 Para empezar, se trató de idear el flujo de interacción, tratando de identificar botones y tratar de simplificar las acciones
+[![primer flujo]](https://github.com/NatRV/SCL010-Cipher/blob/master/images/1.jpg)
+Luego se trató de mejorar el flujograma
+[![segundo flujo]](https://github.com/NatRV/SCL010-Cipher/blob/master/images/3.jpg)
 
-- Testeo e Iteración
+También a través del sketching se trató de visualizar "las pantallas" que tendría la app web:
+[![primer wireframe]](https://github.com/NatRV/SCL010-Cipher/blob/master/images/2.jpg)
+[![segundo wireframe]](https://github.com/NatRV/SCL010-Cipher/blob/master/images/4.jpg)
+- Testeo e Iteración:
+
+Se testeó la app web con una compañera en el taller de UX, por lo cual se hicieron las siguientes peguntas y tareas de usuario:
+
+1. Guía de tareas (tareas y percepciones que podría entender el usuario):
+ - Como las siglas del proyecto se llama "mTS", ¿El usuario entiende las siglas?
+2.Texto de "instrucciones":
+-¿El usuario entiende el contexto por el cual va a usar la app web?
+3. El usuario debe ingresar texto
+-¿El usuario percibe dónde ingresar el texto?
+4. El usuario selecciona un nivel de desplazamiento (en la app web aparece como "nivel de encriptado/desencriptado"
+-¿El usuario entiende lo que es un nivel de desplazamiento? ¿Entiende cómo usarlo? ¿Entiende para qué se debe seleccionar?
+5. El usuario debe hacer click o "tocar" el botón (encriptar/desencriptar)
+-¿El usuario entiende el botón y su significado? ¿Entiende la palabra encriptar/desencriptar?
+6. El usuario debe visualizar el resultado del texto tras haber "apretado" el botón encriptar / desencriptar
+-¿El usuario percibe dónde se mostrará el resultado del texto ingresado?
+7. Tarea "enviar a la nave" (esta tarea de enviar trata de hacer creer que el usuario al hacer click el mensaje se enviará a la nave
+-¿El usuario percibe que puede enviar el resultado a la nave?
+8. El usuario al hacer click en enviar, aparecerá una pantalla con un mensaje encriptado e instrucciones para que vuelva al inicio para desencriptar el mensaje
+-¿El usuario entiende que el mensaje está encriptado? ¿Entiende que debe volver al inicio para desencriptar el mensaje?
+
+RESULTADOS TEST
+A continuación se explicarán las observaciones generales tras haber realizado el test con una compañera:
+a. Al ver las siglas mTS, no entendió inicialmente hasta que leyó la "intro" que aparece en la página
+  Mejora: tratar de hacer un logo de la "marca mTS"
+b. Percibió un desajuste de la página, proporción entre página y textos
+  Mejora: aplicar ajustes en CSS
+c. Botón "enviar", pensó que no funcionaba, por eso no realizó esa acción
+  Mejora: Tratar de explicar de mejor forma que el resultado de la encriptación se puede enviar
+d. Contraste de texto y fondo fue bien percibido, pero en algunas zonas se perdía el texto de color blanco con zonas de color claro del fondo
+  Mejora: aplicar sombra al texto para mejorar contraste
+  
+  Observación final: Tratar de mejorar y testear con más usuarios la app web, para obtener más feedback :)
 
 Desarrollo Front-end:
 
